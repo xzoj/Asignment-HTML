@@ -37,7 +37,7 @@ function checkValidName(){
 }
 function checkValidPhone(){	
 	var spanMsg = phone.nextElementSibling;
-	if (phone.value < 100000 || phone.value> 10000000000 ){
+	if (phone.value < 10000000 || phone.value> 10000000000 ){
 		spanMsg.classList = "error-msg";
 		spanMsg.innerHTML = "*Số điện thoại gồm 8-11 chữ số";				
 		isValidPhone = false;

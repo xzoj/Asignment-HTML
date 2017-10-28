@@ -13,9 +13,10 @@
 }
 .nuoivo{
 	color: white;
-	background: blue;
+	background: #1547e8;
 	font-size: 30px;
 	font-family: cursive;
+	border-radius: 5px;
 }
 .logo{
 	height: 130px;
@@ -28,8 +29,8 @@
 	font-size: 20px;
 }
 .description{
-	font-size: 17px;
-	line-height: 30px;
+	font-size: 20px;
+	line-height: 35px;
 }
 .error-msg {
 	color: red;
@@ -38,7 +39,9 @@
 .success-msg {
 	color: green;
 }
-
+button{
+	float: right;
+}
 main{
 	background-color: #eadacb;
 }
@@ -49,15 +52,16 @@ a{
 	text-decoration: none;
 	display: block;
 }
+
+b{
+	color: red;
+}
 a:hover{
 	font-size: 110%;
 	font-weight: bold;
 }
 blockquote{
-	font-size: 40px;
 	text-align: center;
-	font-family: "Tahoma";
-	font-style: italic;
 	margin-bottom: 20px;
 }
 ul li {display: inline-block;}
@@ -74,12 +78,10 @@ ul li ul li {
 ul li ul li a {display:block !important;} 
 ul li ul li:hover {background: yellow;}
 header{
-	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJtll73LCJ1VhrHvAg8Fk8bfJBF6709uVCU7J7HzkeEnlv7Ue);
+	background-color: #eadacb;
+	/*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJtll73LCJ1VhrHvAg8Fk8bfJBF6709uVCU7J7HzkeEnlv7Ue);*/
 	height: 169px;
 }
-/*section{
-	float: left;
-}*/
 nav	{
 	float: left;
 	display: block;
@@ -101,7 +103,8 @@ article:hover{
 
 }
 footer{
-	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJtll73LCJ1VhrHvAg8Fk8bfJBF6709uVCU7J7HzkeEnlv7Ue);
+	background-color:  #1547e8;
+	/*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJtll73LCJ1VhrHvAg8Fk8bfJBF6709uVCU7J7HzkeEnlv7Ue);*/
 	height: 200px;
 	text-align: center;
 	color: yellow;
@@ -109,6 +112,35 @@ footer{
 	font-size: 30px;
 }
 
+
+
+
+fieldset {
+	border-radius: 5px;
+	margin: 10px;
+
+}
+label {
+	margin: 10px;
+}
+
+input {
+	border-radius: 5px;
+	height: 20px;
+	margin: 10px;
+
+}.form-control {
+	margin: 20px 20px;
+}
+
+.form-control label:first-child {
+	width: 150px;
+	float: left;
+}
+.input{
+	width: 400px;
+	height: 30px;
+}
 [class*="col-"] {
 	float: left;
 	padding: 15px;
@@ -120,8 +152,8 @@ footer{
 }
 
 @media only screen and (min-width: 768px) {
-	 blockquote{
-    	color: white;
+	 blockquote img{
+    	width: 80%;
     }
 
    	.bg{
@@ -164,31 +196,4 @@ footer{
 	.col-12 {
 		width: 100%;
 	}
-}
-
-
-fieldset {
-	border-radius: 5px;
-	margin: 10px;
-
-}
-label {
-	margin: 10px;
-}
-.input{
-	width: 400px;
-	height: 30px;
-}
-input {
-	border-radius: 5px;
-	height: 20px;
-	margin: 10px;
-
-}.form-control {
-	margin: 20px 20px;
-}
-
-.form-control label:first-child {
-	width: 150px;
-	float: left;
 }
